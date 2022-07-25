@@ -1,0 +1,46 @@
+$secondary: #FFFFFF;
+$main: #1a1919;
+@import 'components/nav.scss';
+@import 'base/index.scss';
+@import 'base/contact.scss';
+@import 'base/experience.scss';
+@import 'base/about.scss';
+
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+*{
+	margin:0 auto;
+	padding: 0;
+}
+
+body {
+	font-family: 'Mulish', sans-serif;
+	background: $main;
+	margin: 20;
+	padding: 50;
+	color: $secondary;
+	font-size: 20px;
+	width: 100%;
+	height: auto;
+  }
+
+@media only screen and (max-width: 980px) {
+	.header-container{
+		flex-direction: column;
+	}
+	.name{
+		text-align: center;
+	}
+	.hamburger{
+		display: block;
+	}
+	.ul_main_nav{
+		display: none;
+	}
+	.main_nav{
+		float:right;
+		margin-right: 3rem;
+	}
+  }

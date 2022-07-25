@@ -1,0 +1,19 @@
+{
+  "name": "kevin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass --watch assets/main.scss -o public"
+  },
+  "keywords": [],
+  "author": "Kevin Fachry Kidley",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.52.3",
+    "tailwindcss": "^3.1.6"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

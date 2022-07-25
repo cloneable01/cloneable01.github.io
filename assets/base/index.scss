@@ -1,0 +1,60 @@
+@import 'assets/layouts/glitch.scss';
+
+.profile_container{
+  width: 100%;
+  height: auto;
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  top: 10rem;
+}
+
+.profile_content{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.picture_frame{
+  min-width: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  img{
+    transform: scale(1.2);
+  }
+}
+
+.picture{
+  width: fit-content;
+  .picture_profile{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+}
+.container_bio{
+  justify-content:space-between;
+  min-width: 420px;
+  gap: 20px;
+}
+.bio{
+  min-width: 200px;
+}
+.container_name{
+  font-size: 25px;
+  text-align: center;
+  width: fit-content;
+}
+
+.glitch{
+  white-space: nowrap;
+  font-size: 25px;
+  width: fit-content;
+  letter-spacing: 3px;
+}
+@media only screen and (max-width: 980px) {
+	.profile_content{
+		flex-direction: column;
+	}
+}
