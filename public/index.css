@@ -164,4 +164,8 @@
 
 @media only screen and (max-width: 980px) {
   .profile_content {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .container_bio {
+    font-size: 20px; }
+  .glitch {
+    font-size: 20px; } }

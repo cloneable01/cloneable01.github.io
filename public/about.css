@@ -148,4 +148,5 @@ nav {
   .about {
     width: 50%; }
   .skills_main {
-    width: 70%; } }
+    width: 70%;
+    font: 15px; } }

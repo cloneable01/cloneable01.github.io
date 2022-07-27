@@ -250,7 +250,11 @@ nav {
 
 @media only screen and (max-width: 980px) {
   .profile_content {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .container_bio {
+    font-size: 20px; }
+  .glitch {
+    font-size: 20px; } }
 
 .contact_container {
   width: fit-content;
@@ -534,7 +538,8 @@ nav {
   .about {
     width: 50%; }
   .skills_main {
-    width: 70%; } }
+    width: 70%;
+    font: 15px; } }
 
 * {
   margin: 0 auto;
