@@ -26,7 +26,24 @@ body {
 	height: auto;
   }
 
-@media only screen and (max-width: 980px) {
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+::-webkit-scrollbar-track {
+	background:  linear-gradient(to bottom, rgb(141, 61, 187) 0%, rgb(207, 53, 53) 100%);
+  }
+
+::-webkit-scrollbar-thumb {
+	background: transparent;
+	box-shadow: 0px 0px 0px 100000vh $main;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(to bottom, rgb(95, 41, 126) 0%, rgb(151, 37, 37) 100%);
+}
+
+@media only screen and (max-width: 1020px) {
 	.header-container{
 		flex-direction: column;
 	}

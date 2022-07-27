@@ -5,14 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="public/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/hamburger.min.css">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="stylesheet" style="font-size:24px" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>KevKid</title>
 </head>
 <body>	
 	<nav class="main_nav">
-		<button class="hamburger" style="font-size:30px"><i class="bar fa fa-bars"></i></button>
-		<script type="text/javascript" src="script.js"></script>
+		<div class="button-container">
+			<button class="hamburger hamburger--emphatic" type="button" id="hamburger">
+				<span class="hamburger-box">
+					<span class="bar hamburger-inner"></span>
+				</span>
+			</button>
+		</div>
 		<ul class="ul_main_nav" id="ul_main_nav">
 			<li class="main_nav_item">
 				<a href="index.html">Home</a>
@@ -104,5 +110,6 @@
 	<div class="contact_illustration">
 		<img class="astronaut_1" src="photos/Asset 1.png" alt="astronaut">
 	</div>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
