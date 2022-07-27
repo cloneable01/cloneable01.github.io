@@ -86,13 +86,14 @@ nav{
 
 @media only screen and (max-width: 1020px){
 	.main_nav{
-		display: block;
+		display: inline-block;
 		position: absolute;
-		right: 0;
-		top: -1rem;
+		right: -3rem;
+		top: -2rem;
 		background-color: #353434;
 		height: fit-content;
-		width: fit-content;
+		border-radius: 2rem 0rem 0 2rem;
+		clip-path: circle(1000px at 90% -10%);
 	}	
 
 	.ul_main_nav.show{
