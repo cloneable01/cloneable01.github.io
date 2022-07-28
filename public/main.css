@@ -79,6 +79,8 @@ nav {
     margin: 1rem 3rem; }
   .button-container {
     display: block; }
+  .hamburger-box {
+    transition: all 2s; }
   .hamburger-box .hamburger-inner,
   .hamburger-box .hamburger-inner::before,
   .hamburger-box .hamburger-inner::after {
@@ -474,6 +476,8 @@ nav {
     margin: 1rem 3rem; }
   .button-container {
     display: block; }
+  .hamburger-box {
+    transition: all 2s; }
   .hamburger-box .hamburger-inner,
   .hamburger-box .hamburger-inner::before,
   .hamburger-box .hamburger-inner::after {
@@ -541,9 +545,12 @@ nav {
     font-size: 20px;
     margin: 0 auto; }
   .about {
-    width: 50%; }
+    width: 80%;
+    text-align: justify; }
+  .skills_li {
+    margin: 1.5rem 0; }
   .skills_main {
-    width: 70%; } }
+    width: 90%; } }
 
 * {
   margin: 0 auto;

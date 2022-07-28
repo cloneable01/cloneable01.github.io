@@ -77,9 +77,15 @@
     margin: 0 auto;
 	}
   .about{
-    width: 50%;
+    width: 80%;
+    text-align: justify;
   }
+
+  .skills_li{
+    margin: 1.5rem 0;
+  }
+
   .skills_main{
-    width: 70%;
+    width: 90%;
   }
 }

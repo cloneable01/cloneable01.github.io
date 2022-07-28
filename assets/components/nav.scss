@@ -109,6 +109,10 @@ nav{
 		display: block;
 	}
 
+	.hamburger-box{
+		transition: all 2s;
+	}
+
 	.hamburger-box .hamburger-inner,
 	.hamburger-box .hamburger-inner::before,
 	.hamburger-box .hamburger-inner::after {
