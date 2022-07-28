@@ -1,6 +1,6 @@
 .exp_container{
     width: 100%;
-    margin: 0 3rem 0 3rem auto;
+    margin: 0 auto;
     display:flex;
     position: relative;
     justify-content: center;
@@ -12,6 +12,7 @@
     .exp_container{
       flex-direction: column;
       text-align: center;
+      width: 80%;
     }
   }
 

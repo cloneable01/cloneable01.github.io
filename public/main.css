@@ -229,13 +229,15 @@ nav {
     height: 250px;
     border-radius: 50%; }
 
+.name {
+  margin: 1.25rem 0; }
+
 .container_bio {
-  justify-content: space-between;
-  min-width: 420px;
-  gap: 20px; }
+  justify-content: space-around;
+  gap: 15px; }
 
 .bio {
-  min-width: 200px; }
+  min-width: fit-content; }
 
 .container_name {
   font-size: 25px;
@@ -249,6 +251,8 @@ nav {
   letter-spacing: 3px; }
 
 @media only screen and (max-width: 980px) {
+  .profile_container {
+    width: 90%; }
   .profile_content {
     flex-direction: column; }
   .container_bio {
@@ -376,7 +380,7 @@ nav {
 
 .exp_container {
   width: 100%;
-  margin: 0 3rem 0 3rem auto;
+  margin: 0 auto;
   display: flex;
   position: relative;
   justify-content: center;
@@ -386,7 +390,8 @@ nav {
 @media only screen and (max-width: 980px) {
   .exp_container {
     flex-direction: column;
-    text-align: center; } }
+    text-align: center;
+    width: 80%; } }
 
 nav {
   z-index: 1; }
@@ -538,8 +543,7 @@ nav {
   .about {
     width: 50%; }
   .skills_main {
-    width: 70%;
-    font: 15px; } }
+    width: 70%; } }
 
 * {
   margin: 0 auto;

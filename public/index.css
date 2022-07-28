@@ -143,13 +143,15 @@
     height: 250px;
     border-radius: 50%; }
 
+.name {
+  margin: 1.25rem 0; }
+
 .container_bio {
-  justify-content: space-between;
-  min-width: 420px;
-  gap: 20px; }
+  justify-content: space-around;
+  gap: 15px; }
 
 .bio {
-  min-width: 200px; }
+  min-width: fit-content; }
 
 .container_name {
   font-size: 25px;
@@ -163,6 +165,8 @@
   letter-spacing: 3px; }
 
 @media only screen and (max-width: 980px) {
+  .profile_container {
+    width: 90%; }
   .profile_content {
     flex-direction: column; }
   .container_bio {
