@@ -1,6 +1,5 @@
 nav{
-	z-index:1;
-	// width: 100%;
+	z-index:20;
 }
 
 .main_nav{
@@ -11,22 +10,10 @@ nav{
 	height: 50px;
 }
 
-.ul_main_nav {
-	list-style:none;
+.ul_main_nav{
 	padding-inline-start: 0px;
 	margin: 0 auto;
 	align-items: center;
-	a{
-		font-size: 25px;
-		text-decoration: none;
-		transition-delay: 0s;
-		transition-duration: 0.5s;
-		transition: all() ease-in(0.5s) ;
-		}
-		
-		a:hover{
-		color: #686468;
-		}
 }
 
 .main_nav_item{
@@ -34,14 +21,30 @@ nav{
 	word-spacing: 0px;
 	font-weight: bold;
 	margin-inline: 50px;
-	width: fit-content;
-	
 }
+
+a{	
+	font-size: 25px;
+	text-decoration: none;
+	transition-delay: 0s;
+	transition-duration: 500ms;
+	transition: all() ease-in-out(500ms) ;
+}
+a:hover{
+	color: #686468;
+}
+
 
 .active{
 	a{
-		color: #686468;
-		font-weight: bold;
+		background-image: linear-gradient(to right, rgb(59, 59, 181), rgb(181, 59, 59));
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		transition: 1000ms;
+		background-size: 400% 400%;
+		animation: gradient 15s ease infinite;
+		pointer-events: none;
 	}
 }
 

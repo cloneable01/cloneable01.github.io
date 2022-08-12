@@ -101,7 +101,7 @@
   to {
     transform: rotate(360deg); } }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1020px) {
   .contact_container {
     flex-direction: column;
     text-align: center;

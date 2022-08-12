@@ -1,5 +1,5 @@
 nav {
-  z-index: 1; }
+  z-index: 20; }
 
 .main_nav {
   flex: 1;
@@ -9,29 +9,35 @@ nav {
   height: 50px; }
 
 .ul_main_nav {
-  list-style: none;
   padding-inline-start: 0px;
   margin: 0 auto;
   align-items: center; }
-  .ul_main_nav a {
-    font-size: 25px;
-    text-decoration: none;
-    transition-delay: 0s;
-    transition-duration: 0.5s;
-    transition: all() ease-in(0.5s); }
-  .ul_main_nav a:hover {
-    color: #686468; }
 
 .main_nav_item {
   display: inline-block;
   word-spacing: 0px;
   font-weight: bold;
-  margin-inline: 50px;
-  width: fit-content; }
+  margin-inline: 50px; }
+
+a {
+  font-size: 25px;
+  text-decoration: none;
+  transition-delay: 0s;
+  transition-duration: 500ms;
+  transition: all() ease-in-out(500ms); }
+
+a:hover {
+  color: #686468; }
 
 .active a {
-  color: #686468;
-  font-weight: bold; }
+  background-image: linear-gradient(to right, #3b3bb5, #b53b3b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: 1000ms;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  pointer-events: none; }
 
 .button-container {
   display: none; }
@@ -209,7 +215,7 @@ nav {
   max-width: 1024px;
   margin: 0 auto;
   position: relative;
-  top: 10rem; }
+  top: 8rem; }
 
 .profile_content {
   width: 100%;
@@ -365,7 +371,7 @@ nav {
   to {
     transform: rotate(360deg); } }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1020px) {
   .contact_container {
     flex-direction: column;
     text-align: center;
@@ -396,7 +402,7 @@ nav {
     width: 80%; } }
 
 nav {
-  z-index: 1; }
+  z-index: 20; }
 
 .main_nav {
   flex: 1;
@@ -406,29 +412,35 @@ nav {
   height: 50px; }
 
 .ul_main_nav {
-  list-style: none;
   padding-inline-start: 0px;
   margin: 0 auto;
   align-items: center; }
-  .ul_main_nav a {
-    font-size: 25px;
-    text-decoration: none;
-    transition-delay: 0s;
-    transition-duration: 0.5s;
-    transition: all() ease-in(0.5s); }
-  .ul_main_nav a:hover {
-    color: #686468; }
 
 .main_nav_item {
   display: inline-block;
   word-spacing: 0px;
   font-weight: bold;
-  margin-inline: 50px;
-  width: fit-content; }
+  margin-inline: 50px; }
+
+a {
+  font-size: 25px;
+  text-decoration: none;
+  transition-delay: 0s;
+  transition-duration: 500ms;
+  transition: all() ease-in-out(500ms); }
+
+a:hover {
+  color: #686468; }
 
 .active a {
-  color: #686468;
-  font-weight: bold; }
+  background-image: linear-gradient(to right, #3b3bb5, #b53b3b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: 1000ms;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  pointer-events: none; }
 
 .button-container {
   display: none; }
