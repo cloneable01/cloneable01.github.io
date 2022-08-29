@@ -98,17 +98,7 @@
   to {
     transform: rotate(360deg); } }
 
-@media only screen and (max-width: 1020px) {
-  .contact_container {
-    flex-direction: column;
-    text-align: center;
-    position: relative;
-    left: 0rem; }
-  .contact_illustration {
-    width: 100%;
-    margin: 0 auto; }
-  .astronaut_1 {
-    width: 50px;
-    position: relative;
-    left: 0;
-    top: 13rem; } }
+#github {
+  color: pink;
+  stroke: pink;
+  fill: pink; }
