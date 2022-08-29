@@ -1,162 +1,31 @@
-nav {
-  z-index: 20; }
-
-.main_nav {
-  flex: 1;
-  position: relative;
-  text-align: center;
-  margin: 30px auto;
-  height: 50px; }
-
-.ul_main_nav {
-  padding-inline-start: 0px;
-  margin: 0 auto;
-  align-items: center; }
-
-.main_nav_item {
-  display: inline-block;
-  word-spacing: 0px;
-  font-weight: bold;
-  margin-inline: 50px; }
-
-a {
-  font-size: 25px;
-  text-decoration: none;
-  transition-delay: 0s;
-  transition-duration: 500ms;
-  transition: all() ease-in-out(500ms); }
-
-a:hover {
-  color: #686468; }
-
-.active a {
-  background-image: linear-gradient(to right, #3b3bb5, #b53b3b);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  transition: 1000ms;
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  pointer-events: none; }
-
-.button-container {
-  display: none; }
-
-.hamburger {
+.ul_main_nav.show {
+  display: block;
   position: absolute;
-  right: 0;
-  margin: 0 auto;
-  display: none;
-  cursor: pointer; }
-  .hamburger .bar-active {
-    display: none; }
-  .hamburger .bar-inactive {
-    display: block; }
-  .hamburger.show .bar-active {
-    display: block; }
-  .hamburger.show .bar-inactive {
-    display: none; }
+  left: 0;
+  padding-right: 20px;
+  width: fit-content; }
 
 .hamburger-box .hamburger-inner,
 .hamburger-box .hamburger-inner::before,
 .hamburger-box .hamburger-inner::after {
-  background-color: white;
-  display: none; }
+  display: block; }
+
+.hamburger-box .hamburger-inner,
+.hamburger-box .hamburger-inner::before,
+.hamburger-box .hamburger-inner::after {
+  background-color: #eeeeee; }
 
 .hamburger.is-active .hamburger-box .hamburger-inner,
 .hamburger.is-active .hamburger-box .hamburger-inner::before,
 .hamburger.is-active .hamburger-box .hamburger-inner::after {
-  background-color: white; }
+  background-color: #eeeeee; }
 
-@media only screen and (max-width: 1020px) {
-  .main_nav {
-    display: inline-block;
-    position: absolute;
-    right: -3rem;
-    top: -2rem;
-    background-color: #353434;
-    height: fit-content;
-    border-radius: 2rem 0rem 0 2rem;
-    clip-path: circle(1000px at 90% -10%); }
-  .ul_main_nav.show {
-    display: block; }
-  .main_nav_item {
-    display: block;
-    margin: 1rem 3rem; }
-  .button-container {
-    display: block; }
-  .hamburger-box {
-    transition: all 2s; }
-  .hamburger-box .hamburger-inner,
-  .hamburger-box .hamburger-inner::before,
-  .hamburger-box .hamburger-inner::after {
-    display: block; } }
+body.dark .hamburger-box .hamburger-inner,
+body.dark .hamburger-box .hamburger-inner::before,
+body.dark .hamburger-box .hamburger-inner::after {
+  background-color: #111111; }
 
-.about_container {
-  width: 100%;
-  height: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
-  position: relative;
-  top: 6rem;
-  text-align: justify; }
-
-.about {
-  margin: 0 auto;
-  top: 10rem;
-  max-width: 800px; }
-
-.skills_container {
-  align-items: center;
-  height: auto;
-  justify-content: center;
-  width: 100%; }
-
-.skills_header {
-  text-align: center; }
-
-.skills_main {
-  font-size: 20px;
-  margin: 0 auto;
-  max-width: 800px;
-  margin-top: 3rem; }
-
-.skills_ul {
-  text-align: center; }
-
-.skills_li {
-  display: inline-block;
-  width: 160px;
-  height: auto;
-  margin: 30px;
-  border-radius: 10px; }
-
-.skills_li:hover {
-  color: #000000;
-  cursor: default;
-  font-weight: bold;
-  transition: 5000ms;
-  background: linear-gradient(-45deg, #526fcc, #d36e6e, #f0ed64);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite; }
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-
-@media only screen and (max-width: 1020px) {
-  .about_container {
-    flex-direction: column;
-    font-size: 20px;
-    margin: 0 auto; }
-  .about {
-    width: 80%;
-    text-align: justify; }
-  .skills_li {
-    margin: 1.5rem 0; }
-  .skills_main {
-    width: 90%; } }
+body.dark .hamburger.is-active .hamburger-box .hamburger-inner,
+body.dark .hamburger.is-active .hamburger-box .hamburger-inner::before,
+body.dark .hamburger.is-active .hamburger-box .hamburger-inner::after {
+  background-color: #111111; }

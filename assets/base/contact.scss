@@ -3,7 +3,7 @@
   height: fit-content;
   margin: 0 auto;
   position: relative;
-  top: 10rem;
+  top: 7rem;
   left: 10rem;
   justify-content: center;
   display:block;
@@ -73,7 +73,6 @@
     & .social-group {
 
       &__icon {
-        fill: white;
         transition: all .2s;
       }
 
@@ -83,7 +82,6 @@
       }
 
       &__outline {
-        stroke: white;
         transform-origin: 50% 50%;
         transition: all .2s;
       }
@@ -95,7 +93,6 @@
     & .social-group {
 
       &__icon {
-        fill: white;
         transition: all .45s;
       }
 
@@ -130,8 +127,8 @@
 }
 
 .astronaut_1{
-  position: relative;
-  top: -5rem;
+  position: absolute;
+  bottom: 8rem;
   left: -15rem;
   margin: 0 auto;
   width: 150px;

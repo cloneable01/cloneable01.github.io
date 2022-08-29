@@ -7,10 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="public/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/hamburger.min.css">
 	<script src="https://cdn.tailwindcss.com"></script>
-	<link rel="stylesheet" style="font-size:24px" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<title>KevKid</title>
 </head>
-<body>	
+<body>
 	<nav class="main_nav">
 		<div class="button-container">
 			<button class="hamburger hamburger--emphatic" type="button" id="hamburger">
@@ -21,26 +21,26 @@
 		</div>
 		<ul class="ul_main_nav" id="ul_main_nav">
 			<li class="main_nav_item">
-				<a href="index.html">Home</a>
+				<a class="a-hovgrey" href="index.html">Home</a>
 			</li>
 			<li class="main_nav_item">
-				<a href="about.html">About</a>
+				<a class="a-hovgrey" href="about.html">About</a>
 			</li>
 			<li class="main_nav_item">
-				<a href="portfolio.html">Portfolio</a>
+				<a class="a-hovgrey" href="portfolio.html">Portfolio</a>
 			</li>
 			<li class="main_nav_item">
-				<a href="experience.html">Experience</a>
+				<a class="a-hovgrey" href="experience.html">Experience</a>
 			</li>
 			<li class="main_nav_item active">
-				<a href="contact.html">Contact</a>
+				<a class="a-hovgrey" href="contact.html">Contact</a>
 			</li>
 		</ul>
 	</nav>
 	<div class="contact_container">
-		<div class="line_1">
+		<p class="line_1">
 			reach me through
-		</div>
+		</p>
 		<ul class="contact_ul">
 			<li class="contact_li">
 				<a class="contact_a" target="_blank" href="https://api.whatsapp.com/send?phone=6282126388637">
@@ -110,6 +110,14 @@
 	<div class="contact_illustration">
 		<img class="astronaut_1" src="photos/Asset 1.png" alt="astronaut">
 	</div>
-	<script type="text/javascript" src="script.js"></script>
+	<div class="container-darkMode">
+		<input type="checkbox" class="checkbox" id="chk" style="color: #f4bb4b;">
+		<label for="chk" class="themeLabel">
+			<i class="fas fa-sun fa-2xl" style="color: #f4bb4b;"></i>
+			<i class="fas fa-moon fa-2xl" style="color: #f4bb4b;"></i>
+			<div class="themeBall fa-2xl"></div>
+		</label>
+	</div>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

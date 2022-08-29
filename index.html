@@ -6,57 +6,154 @@
 	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/public/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/hamburger.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<script src="https://cdn.tailwindcss.com"></script>
-	<link rel="stylesheet" style="font-size:24px" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>KevKid</title>
 </head>
 <body>		
-	<nav class="main_nav">
-			<div class="button-container">
-				<button class="hamburger hamburger--emphatic" type="button" id="hamburger">
-					<span class="hamburger-box">
-						<span class="bar hamburger-inner"></span>
-					</span>
-				</button>
-			</div>
-			<ul class="ul_main_nav" id="ul_main_nav">
-				<li class="main_nav_item active">
-					<a href="index.html">Home</a>
-				</li>
-				<li class="main_nav_item">
-					<a title="about" href="about.html">About</a>
-				</li>
-				<li class="main_nav_item">
-					<a href="portfolio.html">Portfolio</a>
-				</li>
-				<li class="main_nav_item">
-					<a href="experience.html">Experience</a>
-				</li>
-				<li class="main_nav_item">
-					<a href="contact.html">Contact</a>
-				</li>
-			</ul>
+	<nav class="main_nav z-19 fixed mt-3">
+		<div class="button-container sticky">
+			<button class="hamburger hamburger--emphatic p-1 m-4" type="button" id="hamburger">
+				<span class="hamburger-box" id="hamburger-box">
+					<span class="bar hamburger-inner" id="bar"></span>
+				</span>
+			</button>
+		</div>
+		<ul class="ul_main_nav hidden ml-4" id="ul_main_nav">
+			<li class="main_nav_item my-4">
+				<a class="a-hovgrey text-xl sm:text-2xl" href="#home">Home</a>
+			</li>
+			<li class="main_nav_item my-4">
+				<a class="a-hovgrey text-xl sm:text-2xl" href="#about">About</a>
+			</li>
+			<li class="main_nav_item my-4">
+				<a class="a-hovgrey text-xl sm:text-2xl" href="#portfolio">Portfolio</a>
+			</li>
+		</ul>
 	</nav>
-	<div class="profile_container m-auto">
-		<div class="profile_content m-auto flex items-center space-around w-full">
-			<div class="picture_frame">
-				<img class="picture_profile" src="/photos/photo.jpg" alt="Profile Picture">
-			</div>
-			<div class="container_name">
-				<div class="name">
-					Hello! I'm Kevin F. Kidley
-				</div>
-				<div class="container_bio flex items-center">
-					<div class="bio">
-						Psychology Major
-					</div>
-					<div class="glitch" data-text="Web Developer">
-						Web Developer
-					</div>
-				</div>
-			</div>
+	<div class="fixed bottom-0 z-10">
+		<div class="container-darkMode">
+			<input type="checkbox" class="checkbox" id="chk" style="color: #f4bb4b;">
+			<label for="chk" class="themeLabel">
+				<i class="fas fa-sun fa-2xl" style="color: #f4bb4b;"></i>
+				<i class="fas fa-moon fa-2xl" style="color: #f4bb4b;"></i>
+				<div class="themeBall fa-2xl"></div>
+			</label>
 		</div>
 	</div>
-	<script type="text/javascript" src="script.js"></script>
+	<section id="home" class="home-section container profile_content 
+	lock items-center space-around w-full pt-28 section-transition">
+		<div class="img-wrapper">
+			<img class="profile-picture" src="/photos/photo.jpg" alt="Profile Picture">
+		</div>
+		<div class="max-w-lg container_name text-center">
+			<h1 class="mt-5 text-3xl">
+				Hello! I'm Kevin F. Kidley
+			</h1>
+			<div class="container_bio h-20 items-center lg:flex sm:block text-2xl">
+				<h2 class="pt-6 sm:pt-0">
+					UI/UX Designer &nbsp;&nbsp;&
+				</h2>
+				<h2 class="glitch m-auto mt-2 lg:m-0" data-text="Frontend Developer">
+					Frontend Developer
+				</h2>
+			</div>
+		</div>
+		<div class="w-full text-right absolute right-0 bottom-12">
+		<a href="#about" class="text-xl w-40 text-center m-auto absolute right-0">about ↓</a>
+		</div>
+	</section>
+	<section id="about" class="container profile_content 
+	lock items-center space-around w-full pt-28 section-transition">
+	<!-- <div class="container profile_content mt-4 pt-16 block items-center space-around pb-8"> -->
+		<div class="w-10/12 lg:w-6/12 text-lg sm:text-xl">
+			I am a final year Psychology student with interest and knowledge toward 
+			technologies and strategies. I am able to apply Psychological approach for
+			UI/UX development, familiar with software development life cycle itself. 
+		</div>
+		<div class="mt-12 w-full">
+			<div class="text-center bg-gray-500 w-3/4 sm:w-5/12">
+				Programming language
+			</div>
+			<div class="my-8 text-center w-full">
+				<ul class="inline-block sm:inline-flex text-center">
+					<li class="text-amber-600 text-center m-8 w-40 sm:w-auto">
+						<i class="fab fa-html5 fa-2x"></i>
+						<p>HTML</p>
+					</li>
+					<li class="text-blue-500 text-center m-8 w-40 sm:w-auto">
+						<i class="fab fa-css3-alt fa-2x"></i>
+						<p>CSS</p>
+					</li>
+					<li class="text-yellow-400 text-center m-8 w-40 sm:w-auto">
+						<i class="fab fa-js fa-2x"></i>
+						<p>Javascript</p>
+					</li>
+					<li class="text-pink-500 text-center m-8 w-40 sm:w-auto">
+						<i class="fab fa-sass fa-2x"></i>
+						<p>SASS</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="mt-12 w-full ">
+			<div class="text-center bg-gray-500 w-3/4 sm:w-5/12">
+				Framework
+			</div>
+			<div class="my-10 text-center max-w-lg">
+				<ul class="m-0 pl-0 inline-block text-center sm:inline-flex sm:pl-12">
+					<li class="text-green-400 text-center m-8 w-30">
+						<i class="fab fa-vuejs fa-2x"></i>
+						<p>Vue.js</p>
+					</li>
+					<li class="text-cyan-400 text-center m-8 w-30">
+						<img width="50" alt="Tailwind CSS Logo" 
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/d
+						/d5/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png">
+						<p>Tailwind CSS</p>
+					</li>
+					<li class="text-purple-600 text-center m-8 w-30">
+						<i class="fab fa-bootstrap fa-2x"></i>
+						<p>Bootstrap</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="mt-12 w-full">
+			<div class="text-center bg-gray-500 w-3/4 sm:w-5/12">
+				Design Tools
+			</div>
+			<div class="my-10 text-center max-w-lg">
+				<ul class="m-0 inline-block text-center sm:inline-flex">
+					<li class="text-center m-8 w-30">
+						<p>Adobe XD</p>
+					</li>
+					<li class="text-center m-8 w-30">
+						<p>Adobe Illustrator</p>
+					</li>
+					<li class="text-center m-8 w-30">
+						<p>Figma</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="mt-12 w-full">
+			<div class="text-center bg-gray-500 w-3/4 sm:w-5/12">
+				Version Control
+			</div>
+			<p class="my-16 text-center w-full">Git</p>
+		</div>
+	</section>
+	<!-- <section id="portfolio">
+		<div class="w-full m-auto text-center my-8 pt-20">
+			<p class="m-4">Experience</p>
+			<p class="m-4 pt-12">unfortunately I have no relevant professional work experience.</p>
+		</div>
+		<div class="w-full m-auto text-center my-8 pt-16">
+			<p>But here are some of my Project</p>
+		</div>
+	</section> -->
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="/script/theme.js"></script>
 </body>
 </html>

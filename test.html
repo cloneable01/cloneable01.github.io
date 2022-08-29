@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="public/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/hamburger.min.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- <link rel="stylesheet" style="font-size:24px" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<title>KevKid</title>
+</head>
+<body>		
+	<nav class="main_nav">
+		<div class="button-container">
+			<button class="hamburger hamburger--emphatic" type="button" id="hamburger">
+				<span class="hamburger-box">
+					<span class="bar hamburger-inner"></span>
+				</span>
+			</button>
+		</div>
+		<ul class="ul_main_nav" id="ul_main_nav">
+			<li class="main_nav_item">
+				<a class="a-hovgrey" href="index.html">Home</a>
+			</li>
+			<li class="main_nav_item active">
+				<a class="a-hovgrey" href="test.html">TEST!</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="abt-container">
+		<div class="test-about">
+			<div>
+				this is about
+			</div>
+		</div>
+		<div class="test-skills">
+			<div>
+				this is skills
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="theme">
+		<i class="icon darkMode fas fa-sun fa-2xl" style="color: #f4bb4b;" onclick="setDarkMode(true)"></i>
+		<i class="icon darkMode fas fa-moon fa-2xl" style="color: #f4bb4b;" onclick="setDarkMode(false)"></i>
+	</div> -->
+
+	<div class="container-darkMode">
+		<input type="checkbox" class="checkbox" id="chk" style="color: #f4bb4b;">
+		<label for="chk" class="themeLabel">
+			<i class="fas fa-sun fa-2xl" style="color: #f4bb4b;"></i>
+			<i class="fas fa-moon fa-2xl" style="color: #f4bb4b;"></i>
+			<div class="themeBall fa-2xl"></div>
+		</label>
+	</div>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/script/pop-up.js"></script>
+</body>
+</html>
