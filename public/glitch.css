@@ -1,6 +1,7 @@
 .glitch {
   position: relative;
-  white-space: nowrap; }
+  white-space: nowrap;
+  z-index: -1; }
 
 @keyframes noise-anim {
   0% {
