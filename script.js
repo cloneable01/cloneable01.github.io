@@ -14,6 +14,7 @@ document.onclick = function(clickevent){
         hamburger.classList.remove('is-active');
         NavUl.classList.remove('show');
         navBar.style.backgroundColor = 'transparent';
+        isActive = false;
     }
 }
 
