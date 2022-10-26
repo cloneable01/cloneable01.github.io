@@ -63,6 +63,17 @@
     opacity: 1;
 }
 
+#navBar {
+    width: 0;
+    transition: all 0.5s ease-in-out;   
+    height: 100vh;
+    background-color: #B6B6B4;
+}
+
+#navBar.isactive{
+    width: 120px;
+}
+
 .hamburger-box .hamburger-inner,
 .hamburger-box .hamburger-inner::before,
 .hamburger-box .hamburger-inner::after {
@@ -78,7 +89,7 @@
 .hamburger.is-active .hamburger-box .hamburger-inner,
 .hamburger.is-active .hamburger-box .hamburger-inner::before,
 .hamburger.is-active .hamburger-box .hamburger-inner::after{
-	background-color: #111111;
+	background-color: #eeeeee;
 }
 
 body.dark{
@@ -93,15 +104,4 @@ body.dark{
 	.hamburger.is-active .hamburger-box .hamburger-inner::after{
 		background-color: #111111;
 	}
-}
-
-#navBar {
-    width: 0;
-    transition: all 0.8s ease-in-out;   
-    height: 100vh;
-    background-color: #B6B6B4;
-}
-
-#navBar.isactive{
-    width: 120px;
 }
