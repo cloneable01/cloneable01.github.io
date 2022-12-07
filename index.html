@@ -14,23 +14,20 @@
 	<title>KevKid</title>
 </head>
 <body>	
-	<nav class="navBar z-50 fixed pt-3" id="navBar" data-aos="slide-right">
+	<nav class="navBar z-50 fixed pt-3 h-max" id="navBar" data-aos="slide-right">
 		<div class="button-container sticky">
 			<button class="hamburger hamburger--spring p-1 m-4" type="button" id="hamburger">
-				<span class="hamburger-box" id="hamburger-box">
+				<span class="hamburger-box" id="hamburger-box" data-aos="zoom-in-right">
 					<span class="bar hamburger-inner" id="bar"></span>
 				</span>
 			</button>
 		</div>
-		<ul class="ul_main_nav hidden w-full text-left m-auto" id="ulMainNav">
+		<ul class="ul_main_nav hidden w-full text-left m-auto text-white" id="ulMainNav">
 			<li class="my-4">
 				<a class="hover:text-blue-400 text-xl pl-4 w-full sm:text-2xl" href="#home">Home</a>
 			</li>
 			<li class="my-4">
 				<a class="hover:text-blue-400 text-xl pl-4 w-full sm:text-2xl" href="#about">About</a>
-			</li>
-			<li class="my-4">
-				<a class="hover:text-blue-400 text-xl pl-4 w-full sm:text-2xl" href="#contact">Contact</a>
 			</li>
 			<li class="my-4">
 				<div class="container-darkMode pl-4 w-full absolute">
@@ -43,9 +40,53 @@
 				</div>
 			</li>
 		</ul>
+		<div class="contact h-full text-white block overflow-hidden z-50 grid grid-cols-2" id="contact">
+			<div class="contact-title relative top-44 text-4xl w-full h-fit overflow-visible text-gray-200" id="contactTitle">
+				Contact
+			</div>
+			<ul class="block h-fit w-full grid gap-2 flex">
+				<li class="m-auto w-full text-right pr-4">
+					<a 
+					title="Whatsapp"
+					class="fab fa-whatsapp fa-2x hover:text-blue-400 transition-all m-auto" 
+					target="_blank" 
+					href="https://api.whatsapp.com/send?phone=6282126388637">
+					</a>
+				</li>
+				<li class="m-auto w-full text-right pr-4">
+					<a 
+					title="Gmail"
+					class="fas fa-envelope fa-2x hover:text-blue-400 transition-all m-auto" 
+					href="mailto:kevinkidley@gmail.com">
+					</a>
+				</li>
+				<li class="m-auto w-full text-right pr-4">
+					<a 
+					title="Github"
+					href="https://github.com/cloneable01" 
+					target="_blank" 
+					class="fab fa-github fa-2x hover:text-blue-400 transition-all m-auto">
+					</a>
+				</li>
+				<li class="m-auto w-full text-right pr-4">
+					<a 
+					title="Linkedin"
+					href="https://www.linkedin.com/in/kevin-kidley/" 
+					target="_blank" 
+					class="fab fa-linkedin-in fa-2x hover:text-blue-400 transition-all m-auto"></a>
+				</li>
+				<li class="m-auto w-full text-right pr-4">
+					<a 
+					title="Instagram"
+					href="https://www.instagram.com/kevinkidley/" 
+					target="_blank" 
+					class="fab fa-instagram fa-2x hover:text-blue-400 m-auto"></a>
+				</li>
+			</ul>
+		</div>
 	</nav>
 	<section id="home" class="home-section container profile_content 
-	lock items-center space-around w-full section-transition pt-28">
+	lock items-center space-around w-full section-transition pt-26vh">
 		<div class="img-wrapper" data-aos-easing="ease-in-sine" data-aos="zoom-in-down" data-aos-duration="900">
 			<img class="profile-picture" src="/photos/photo.jpg" alt="Profile Picture">
 		</div>
@@ -54,34 +95,44 @@
 			<h1 class="mt-5 text-3xl">
 				Hello! I'm Kevin F. Kidley
 			</h1>
-			<div class="container_bio h-20 items-center lg:flex sm:block text-2xl">
-				<h2 class="pt-6 sm:pt-0">
-					UI/UX Designer &nbsp;&nbsp;&
+			<div class="container_bio h-20 items-center block sm:block text-2xl mt-8">
+				<h2 class="m-auto glitch" data-text="UI/UX Designer">
+					UI/UX Designer
 				</h2>
-				<h2 class="glitch m-auto mt-2 lg:m-0" data-text="Frontend Developer">
-					Frontend Developer
+				<h2 class="m-auto anim-typewriter line-1 mt-1" data-text="Front-end Web Developer">
+					Front-end Web Developer
 				</h2>
 			</div>
 		</div>
 		<div class="w-full text-center sm:text-right absolute sm:right-8 bottom-24" 
 		data-aos="fade-down" data-aos-delay="1300" data-aos-duration="900">
-			<a href="#about" class="text-xl text-center m-auto right-0">about ↓</a>
+			<a href="#about" class="text-xl text-center m-auto right-0 hover:text-blue-400">about ↓</a>
 		</div>
 	</section>
 	<section id="about" class="container profile_content 
-	lock items-center space-around w-full" 
-	data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-		<div class="w-10/12 lg:w-6/12 text-lg sm:text-xl pt-28 text-center">
-			Here's a little about me
+	lock items-center space-around w-full">
+		<div class="w-fit py-12"
+			data-aos="fade-zoom-in"
+			data-aos-easing="ease-in-back"
+			data-aos-delay="100"
+			data-aos-offset="0"
+			data-aos-duration="1000">
+			<div class="w-10/12 lg:w-6/12 text-lg sm:text-2xl text-center">
+				Here's a little about me
+			</div>
+			<div class="w-10/12 lg:w-6/12 pt-16">
+				<h2 class="text-lg sm:text-xl text-justify">
+					I'm a Front-end web developer with Psychology major background, based in Bandung, Indonesia. 
+					I'm able to apply Psychological approach for UI/UX development, 
+					familiar with software development life cycle.
+				</h2>
+			</div>
 		</div>
-		<div class="w-10/12 lg:w-6/12 text-lg sm:text-xl pt-16 text-justify">
-			I'm a Front-end web developer with Psychology major background. 
-			I'm able to apply Psychological approach for UI/UX development, 
-			familiar with software development life cycle.
-		</div>
-		<div class="mt-12 bg-gray-200 w-fit sm:w-5/12">
+		<div class="mt-12 bg-gray-200 w-fit sm:w-5/12"
+		data-aos="fade-right"
+		data-aos-delay="500">
 			<div class="text-center bg-black w-full text-green-500 border-green-500 border-2">
-				Programming language
+				Language
 			</div>
 			<div class="text-center max-w-lg">
 				<ul class="py-12 w-full m-auto text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
@@ -104,7 +155,9 @@
 				</ul>
 			</div>
 		</div>
-		<div class="mt-12 bg-gray-200 w-fit sm:w-5/12">
+		<div class="mt-12 bg-gray-200 w-fit sm:w-5/12"
+		data-aos="fade-left"
+		data-aos-delay="500">
 			<div class="text-center bg-black w-full text-green-500 border-green-500 border-2">
 				Framework
 			</div>
@@ -127,7 +180,9 @@
 				</ul>
 			</div>
 		</div>
-		<div class="mt-12 bg-gray-200 w-fit sm:w-5/12">
+		<div class="mt-12 bg-gray-200 w-fit sm:w-5/12"
+		data-aos="fade-right"
+		data-aos-delay="500">
 			<div class="text-center bg-black w-full text-green-500 border-green-500 border-2">
 				Design Tools
 			</div>
@@ -145,7 +200,10 @@
 				</ul>
 			</div>
 		</div>
-		<div class="my-12 bg-gray-200 w-56 sm:w-5/12">
+		<div class="my-12 bg-gray-200 w-56 sm:w-5/12"
+		data-aos="fade-left"
+		data-aos-delay="500"
+		data-aos-duration="5000">
 			<div class="text-center bg-black w-full text-green-500 border-green-500 border-2">
 				Version Control
 			</div>
@@ -153,42 +211,6 @@
 		</div>
 	</section>
 	<footer id="contact">
-		<div class="h-12 text-white bg-gradient-to-r from-indigo-600 via-purple-900 to-indigo-600">
-			<ul class="flex m-auto h-full">
-				<li class="m-auto w-full text-center">
-					<a 
-					class="fab fa-whatsapp fa-2x hover:text-green-600 transition-all m-auto" 
-					target="_blank" 
-					href="https://api.whatsapp.com/send?phone=6282126388637">
-					</a>
-				</li>
-				<li class="m-auto w-full text-center">
-					<a 
-					class="fas fa-envelope fa-2x hover:text-yellow-300 transition-all m-auto" 
-					href="mailto:kevinkidley@gmail.com">
-					</a>
-				</li>
-				<li class="m-auto w-full text-center">
-					<a 
-					href="https://github.com/cloneable01" 
-					target="_blank" 
-					class="fab fa-github fa-2x hover:text-black transition-all m-auto">
-					</a>
-				</li>
-				<li class="m-auto w-full text-center">
-					<a 
-					href="https://www.linkedin.com/in/kevin-kidley/" 
-					target="_blank" 
-					class="fab fa-linkedin-in fa-2x hover:text-blue-500 transition-all m-auto"></a>
-				</li>
-				<li class="m-auto w-full text-center">
-					<a 
-					href="https://www.instagram.com/kevinkidley/" 
-					target="_blank" 
-					class="fab fa-instagram fa-2x hover:text-pink-400 m-auto"></a>
-				</li>
-			</ul>
-		</div>
 	</footer>
 	<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript" src="/script/theme.js"></script>

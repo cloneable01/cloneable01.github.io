@@ -13,10 +13,10 @@
 
 .checkbox:checked + .themeLabel{
     background-color: transparent;
-    border-color: black;
+    border-color: rgb(255, 255, 255);
     .themeBall{
         transform: translateX(100%);
-        background-color: black;
+        background-color: rgb(255, 255, 255);
     }
 }
 
@@ -26,12 +26,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-color: #111111;
+    border-color: #ffffff;
     border-width: 2px;
     height: 35px;
     width: 60px;
     border-radius: 50px;
     cursor: pointer;
+}
+
+
+.themeLabel:hover{
+    border-color: rgb(96, 165, 250);
 }
 
 .themeBall{
@@ -41,9 +46,26 @@
     left: 0;
     margin: 0 2px;
     border-radius: 50%;
-    background-color: #111111;
+    background-color: #ffffff;
     transition: transform 0.3s linear;
     cursor: pointer;
+}
+
+.contact{
+    position: relative;
+    top: 66%;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact{
+        position: relative;
+        top: 63%;
+    }
+}
+
+.contact-title{
+    rotate: 270deg;
+    letter-spacing: 0.3em;
 }
 
 //for NavBar
@@ -59,7 +81,7 @@
 
 #ulMainNav.show{
     left: 0;
-    color: #111111 !important;
+    // color: #111111 !important;
     opacity: 1;
 }
 
@@ -67,7 +89,8 @@
     width: 0;
     transition: all 0.5s ease-in-out;   
     height: 100vh;
-    background-color: #B6B6B4;
+    background-color: #353535;
+    // background-color: #B6B6B4;
 }
 
 #navBar.isactive{
@@ -104,4 +127,32 @@ body.dark{
 	.hamburger.is-active .hamburger-box .hamburger-inner::after{
 		background-color: #111111;
 	}
+}
+
+//type animation
+
+.anim-typewriter{
+    animation-delay: 1s;
+    animation: typewriter 3.5s steps(44) 1s 1 normal both,
+               blinkTextCursor 1s steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0em;}
+    to{width: 12em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(192, 19, 19, 0.75);}
+    to{border-right-color: transparent;}
+  }
+
+.line-1{
+    width: 12em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation-delay: 1.8s;
+    -webkit-animation-delay: 1.8s;
+    // transform: translateY(-50%);    
 }
