@@ -1,3 +1,4 @@
+//navbar
 const navBar = document.getElementById ('navBar')
 const hamburger = document.getElementById ('hamburger')
 const navUl = document.getElementById ('ulMainNav')
@@ -5,6 +6,7 @@ const HamSpan = document.getElementById('hamburger-box')
 const bar = document.getElementById ('bar')
 const contact = document.getElementById ('contact')
 const contactTitle = document.getElementById ('contactTitle')
+const navAvoidClose = document.getElementsByClassName ('nav-avoid')
 
 var isActive = false
 
@@ -26,7 +28,7 @@ function toggleNavBar(){
 }
 
 document.onclick = function(clickevent){
-    if( !['NavUl', 'hamburger', 'hamburger-box', 'bar', 'navBar', 'contact', 'contactTitle'].includes(clickevent.target.id) && isActive) {
+    if( !['NavUl', 'hamburger', 'hamburger-box', 'bar', 'navBar', 'contact', 'contactTitle', 'nav-avoid'].includes(clickevent.target.id) && isActive) {
         toggleNavBar()
     }
 }

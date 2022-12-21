@@ -51,6 +51,12 @@
   margin: 30px;
 }
 
-.pt-26vh{
-  padding-top: 26vh;
+.pt-30vh{
+  padding-top: 30vh;
+}
+
+@media only screen and (max-width: 640px) {
+  .pt-30vh{
+    padding-top: 23vh;
+  }
 }

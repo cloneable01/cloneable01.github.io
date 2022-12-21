@@ -23,14 +23,14 @@
 			</button>
 		</div>
 		<ul class="ul_main_nav hidden w-full text-left m-auto text-white" id="ulMainNav">
-			<li class="my-4">
-				<a class="hover:text-blue-400 text-xl pl-4 w-full sm:text-2xl" href="#home">Home</a>
+			<li class="my-4 nav-avoid">
+				<a class="hover:text-blue-400 text-xl ml-4 w-full sm:text-2xl" href="#home">Home</a>
 			</li>
-			<li class="my-4">
-				<a class="hover:text-blue-400 text-xl pl-4 w-full sm:text-2xl" href="#about">About</a>
+			<li class="my-4 nav-avoid">
+				<a class="hover:text-blue-400 text-xl ml-4 w-full sm:text-2xl" href="#about">About</a>
 			</li>
-			<li class="my-4">
-				<div class="container-darkMode pl-4 w-full absolute">
+			<li class="my-4 nav-avoid">
+				<div class="container-darkMode ml-4 w-full absolute">
 					<input type="checkbox" class="checkbox" id="chk" style="color: #f4bb4b;">
 					<label for="chk" class="themeLabel">
 						<i class="fas fa-sun fa-2xl" style="color: #f4bb4b;"></i>
@@ -41,14 +41,14 @@
 			</li>
 		</ul>
 		<div class="contact h-full text-white block overflow-hidden z-50 grid grid-cols-2" id="contact">
-			<div class="contact-title relative top-44 text-4xl w-full h-fit overflow-visible text-gray-200" id="contactTitle">
+			<div class="contact-title relative top-36 sm:top-44 text-3xl sm:text-4xl w-full h-fit overflow-visible text-gray-200" id="contactTitle">
 				Contact
 			</div>
-			<ul class="block h-fit w-full grid gap-2 flex">
+			<ul class="block h-fit w-full grid gap-3 sm:gap-2 flex sm:pt-8 sm:mt-2">
 				<li class="m-auto w-full text-right pr-4">
 					<a 
 					title="Whatsapp"
-					class="fab fa-whatsapp fa-2x hover:text-blue-400 transition-all m-auto" 
+					class="fab fa-whatsapp fa-lg sm:fa-2x hover:text-blue-400 transition-all m-auto" 
 					target="_blank" 
 					href="https://api.whatsapp.com/send?phone=6282126388637">
 					</a>
@@ -56,7 +56,7 @@
 				<li class="m-auto w-full text-right pr-4">
 					<a 
 					title="Gmail"
-					class="fas fa-envelope fa-2x hover:text-blue-400 transition-all m-auto" 
+					class="fas fa-envelope fa-lg sm:fa-2x hover:text-blue-400 transition-all m-auto" 
 					href="mailto:kevinkidley@gmail.com">
 					</a>
 				</li>
@@ -65,7 +65,7 @@
 					title="Github"
 					href="https://github.com/cloneable01" 
 					target="_blank" 
-					class="fab fa-github fa-2x hover:text-blue-400 transition-all m-auto">
+					class="fab fa-github fa-lg sm:fa-2x hover:text-blue-400 transition-all m-auto">
 					</a>
 				</li>
 				<li class="m-auto w-full text-right pr-4">
@@ -73,33 +73,33 @@
 					title="Linkedin"
 					href="https://www.linkedin.com/in/kevin-kidley/" 
 					target="_blank" 
-					class="fab fa-linkedin-in fa-2x hover:text-blue-400 transition-all m-auto"></a>
+					class="fab fa-linkedin-in fa-lg sm:fa-2x hover:text-blue-400 transition-all m-auto"></a>
 				</li>
 				<li class="m-auto w-full text-right pr-4">
 					<a 
 					title="Instagram"
 					href="https://www.instagram.com/kevinkidley/" 
 					target="_blank" 
-					class="fab fa-instagram fa-2x hover:text-blue-400 m-auto"></a>
+					class="fab fa-instagram fa-lg sm:fa-2x hover:text-blue-400 m-auto"></a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 	<section id="home" class="home-section container profile_content 
-	lock items-center space-around w-full section-transition pt-26vh">
+	lock items-center space-around w-full section-transition pt-30vh sm:pt-26vh">
 		<div class="img-wrapper" data-aos-easing="ease-in-sine" data-aos="zoom-in-down" data-aos-duration="900">
 			<img class="profile-picture" src="/photos/photo.jpg" alt="Profile Picture">
 		</div>
 		<div class="max-w-lg container_name text-center" data-aos-easing="ease-in-sine" 
 		data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="900">
-			<h1 class="mt-5 text-3xl">
+			<h1 class="mt-5 text-2xl sm:text-3xl">
 				Hello! I'm Kevin F. Kidley
 			</h1>
-			<div class="container_bio h-20 items-center block sm:block text-2xl mt-8">
-				<h2 class="m-auto glitch" data-text="UI/UX Designer">
+			<div class="container_bio h-20 items-center block sm:block text-lg sm:text-2xl">
+				<!-- <h2 class="m-auto glitch" data-text="UI/UX Designer">
 					UI/UX Designer
-				</h2>
-				<h2 class="m-auto anim-typewriter line-1 mt-1" data-text="Front-end Web Developer">
+				</h2> -->
+				<h2 class="m-auto anim-typewriter line-1 mt-1 text-lg sm:text-2xl" data-text="Front-end Web Developer">
 					Front-end Web Developer
 				</h2>
 			</div>
@@ -131,10 +131,10 @@
 		<div class="mt-12 bg-gray-200 w-fit sm:w-5/12"
 		data-aos="fade-right"
 		data-aos-delay="500">
-			<div class="text-center bg-black w-full text-green-500 border-green-500 border-2">
+			<div class="text-center bg-black w-full text-green-500 border-green-500 border-2 skill-title">
 				Language
 			</div>
-			<div class="text-center max-w-lg">
+			<div class="text-center max-w-lg skills-list">
 				<ul class="py-12 w-full m-auto text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
 					<li class="text-amber-600 text-center m-8 w-40 sm:w-auto">
 						<i class="fab fa-html5 fa-2x"></i>
@@ -158,10 +158,10 @@
 		<div class="mt-12 bg-gray-200 w-fit sm:w-5/12"
 		data-aos="fade-left"
 		data-aos-delay="500">
-			<div class="text-center bg-black w-full text-green-500 border-green-500 border-2">
+			<div class="text-center bg-black w-full text-green-500 border-green-500 border-2 skill-title">
 				Framework
 			</div>
-			<div class="text-center max-w-lg">
+			<div class="text-center max-w-lg skill-list">
 				<ul class="py-12 w-full m-auto text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 					<li class="text-green-400 text-center m-8 w-40 sm:w-auto">
 						<i class="fab fa-vuejs fa-2x"></i>
@@ -183,10 +183,10 @@
 		<div class="mt-12 bg-gray-200 w-fit sm:w-5/12"
 		data-aos="fade-right"
 		data-aos-delay="500">
-			<div class="text-center bg-black w-full text-green-500 border-green-500 border-2">
+			<div class="text-center bg-black w-full text-green-500 border-green-500 border-2 skill-title">
 				Design Tools
 			</div>
-			<div class="text-center max-w-lg text-black">
+			<div class="text-center max-w-lg text-black skill-list">
 				<ul class="py-12 text-center w-full text-black grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
 					<li class="text-center m-8 w-40 sm:w-auto">
 						<p>Adobe XD</p>
@@ -200,14 +200,14 @@
 				</ul>
 			</div>
 		</div>
-		<div class="my-12 bg-gray-200 w-56 sm:w-5/12"
+		<div class="my-12 bg-gray-200 w-56 sm:w-5/12 skills"
 		data-aos="fade-left"
 		data-aos-delay="500"
 		data-aos-duration="5000">
-			<div class="text-center bg-black w-full text-green-500 border-green-500 border-2">
+			<div class="text-center bg-black w-full text-green-500 border-green-500 border-2 skill-title">
 				Version Control
 			</div>
-			<div class="py-12 text-center text-black w-full sm:w-auto">Git</div>
+			<div class="py-12 text-center text-black w-full sm:w-auto skill-list">Git</div>
 		</div>
 	</section>
 	<footer id="contact">
