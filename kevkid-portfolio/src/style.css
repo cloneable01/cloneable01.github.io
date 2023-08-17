@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.806);
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("assets/angel.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: LeGenoss;
+  src: url(/src/style/font/LeGenossPersonalUse-d9yvl.otf) format("opentype");
+}
+
+.font-le-genoss {
+  font-family: LeGenoss;
+}
+
+::-webkit-scrollbar{
+  display: none;
+  -webkit-appearance: none;
+}
+
+.secondary{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.el-dialog { background-color: #0c0c0c }
+
+@media only screen and (max-width: 640px) {
+  body {
+    background-image: none;
+    background-color: rgb(26, 26, 26);
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+    -webkit-appearance: none;
+  }
+}
