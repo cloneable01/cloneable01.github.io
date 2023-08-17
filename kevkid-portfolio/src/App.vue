@@ -1,31 +1,29 @@
 <template>
-  <div class="min-h-screen">
-    <div class=" border-black bg-white border h-12">
-      <div class=" md:mx-12 my-auto py-3">
-        <ul class=" inline-flex">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#info">Info</a>
-          </li>
-          <li>
-            <a href="#task">Task</a>
-          </li>
-          <li>
-            <a href="#link">Link</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="m-auto bg-white max-w-screen-xl">
+  <div class="min-h-screen" style="min-height: 200vh">
+    <navbar class="fixed"></navbar>
+    <div class="">
       <div class="m-auto">test</div>
     </div>
   </div>
 </template>
 
+<style scoped>
+body {
+  font-family: "Monomaniac One", sans-serif;
+}
+
+
+</style>
+
 <script>
+import styles from "./style.css?inline"
+import Navbar from "./components/navbar.vue"
+
 export default {
+  components: {
+    styles: styles,
+    Navbar: Navbar
+  } 
 
 };
 </script>
