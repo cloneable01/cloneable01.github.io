@@ -17,11 +17,6 @@ html {
   scroll-behavior: smooth;
 }
 
-li {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 html,
 body {
   font-family: "Monomaniac One", sans-serif;
@@ -29,18 +24,4 @@ body {
 
 body {
   background-color: white;
-}
-
-.monoton {
-  font-family: "Monoton", cursive;
-  color: red;
-  font-size: 20px;
-}
-
-.btn {
-  height: max-content;
-}
-
-.btn:hover {
-  background-color: lightgray;
 }

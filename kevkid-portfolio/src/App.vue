@@ -1,13 +1,13 @@
 <template>
   <div class="min-h-screen" style="min-height: 200vh">
-    <navbar class="fixed"></navbar>
-    <div class="">
-      <div class="m-auto">test</div>
+    <navbar></navbar>
+    <div class="mt-20">
+      <div class=" mx-24 border-2 border-black h-[45rem]">test</div>
     </div>
   </div>
 </template>
 
-<style scoped>
+<style>
 body {
   font-family: "Monomaniac One", sans-serif;
 }
