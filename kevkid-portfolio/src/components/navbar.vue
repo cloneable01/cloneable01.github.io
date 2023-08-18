@@ -1,5 +1,5 @@
 <template>
-  <div class="top-0 fixed border-black border-b-2 h-auto z-50 min-w-full flex justify-between md:text-xl text-sm">
+  <div class="top-0 fixed bg-white border-black border-b-2 h-auto z-50 min-w-full flex justify-between md:text-xl text-sm">
     <button class=" md:hidden text-2xl">
       x
     </button>
