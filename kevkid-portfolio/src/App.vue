@@ -1,9 +1,9 @@
 <template>
   <div class="sm:min-h-screen block" style="min-height: 200vh">
     <navbar></navbar>
-    <div class="mt-16 sm:mt-20"/>
+    <div class="mt-16 mb-4 sm:mt-20 sm:mb-10"/>
       <Home />
-    <div class="mt-8 sm:mt-20">
+    <div class="my-4 sm:my-10">
       <About />
     </div>
   </div>
