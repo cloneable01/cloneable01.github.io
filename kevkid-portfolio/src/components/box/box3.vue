@@ -1,13 +1,13 @@
 <template>
   <div class="w-full sm:w-3/4">
-    <div class="border-container float-left text-left w-full sm:w-fit bg-white">
+    <div class="border-container float-right text-right w-full sm:w-fit bg-white">
       <div class="square top-left"></div>
       <div class="square top-right"></div>
       <div class="square bottom-left"></div>
       <div class="square bottom-right"></div>
       <div class="m-8 text-base sm:text-lg md:text-2xl xl:text-4xl tracking-[0.04rem] sm:tracking-[0.1rem] max-w-[520px] sm:max-w-[720px]">
         <p>
-          Transforming Designs into Seamless Interactive Realities<span class=" text-red-500">.</span>
+          Merging Aesthetics <span class=" text-red-500">&</span> Functionality to Shape Digital Interfaces<span class=" text-red-500">.</span>
         </p>
       </div>
     </div>
