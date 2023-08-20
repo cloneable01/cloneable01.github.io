@@ -10,7 +10,7 @@
           <div class="square bottom-right"></div>
           <div class="m-8 text-sm sm:text-lg md:text-2xl xl:text-4xl tracking-[0.04rem] sm:tracking-[0.15rem] max-w-[520px] sm:max-w-[700px]">
             <p>
-              Hello<span>,</span> Im Kevin FF<span>.</span> Kidley
+              Hello<span>,</span> Im Kevin F<span>.</span> Kidley
             </p>
             <p>I am a Front<span>-</span>End Developer</p>
           </div>
