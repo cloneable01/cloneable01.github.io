@@ -6,7 +6,7 @@
     <div class="my-4 sm:my-10">
       <About />
     </div>
-    test1
+    test
   </div>
 </template>
 
