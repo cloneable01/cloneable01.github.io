@@ -28,7 +28,6 @@
         <div class="max-w-32 text-center mb-16 mt-8 sm:mb-0 sm:text-justify">
           <div>
             <p class="text-lg md:text-2xl">Skill set</p>
-            <p>&#40; stronger each day &#41;</p>
           </div>
           <div class="mt-4 md:mt-8 block">
             <div class="mb-4">
