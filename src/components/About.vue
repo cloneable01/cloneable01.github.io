@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class=" text-red-500 sm:flex text-base sm:text-xl m-auto monoton border-2 border-black bg-white w-fit p-2 sm:absolute sm:left-20 sm:top-[57.5rem] z-20">ABOUT</div>
+  <div class="relative">
+    <div class=" text-red-500 sm:flex text-base sm:text-xl m-auto monoton border-2 border-black bg-white w-fit p-2 sm:absolute sm:left-20 sm:top-12 z-20">ABOUT</div>
     <div class="mx-8 mt-8 sm:mt-8 sm:mx-24 border sm:border-2 border-black bg-white h-fit justify-around block flex-col">
       <div class="w-3/4 m-auto mt-16">
         <div class="border-container m-auto w-fit bg-white">
