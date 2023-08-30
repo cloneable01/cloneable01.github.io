@@ -1,7 +1,7 @@
 <template>
   <div class="sm:min-h-screen block">
     <Navbar @scrollToSection="scrollToSection" />
-    <div class="mt-16 mb-4 sm:mt-20 sm:mb-10">
+    <div class="mt-16 mb-4 sm:mt-[4.5rem] sm:mb-10">
       <Home />
     </div>
     <div class="my-4 sm:my-10">

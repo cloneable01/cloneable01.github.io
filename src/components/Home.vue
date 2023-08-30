@@ -48,7 +48,7 @@ export default {
       this.delayedElements.forEach((element) => {
         const scrollY = window.scrollY;
         const elementOffset = element.offsetTop;
-        const direction = scrollY > elementOffset ? -1 : 1;
+        const direction = scrollY > elementOffset ? +1 : -1;
         const delay = 0.5;
         const maxOffset = 12;
         const resetDelay = 500;

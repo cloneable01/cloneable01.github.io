@@ -5,10 +5,10 @@
     </button> -->
     <ul class="flex monoton ml-4 md:ml-20 m-auto text-red-500 text-[0.6rem] sm:text-xl">
       <li>
-        <a href="#about" class="btn" @click="scrollToSection('about')">ABOUT</a>
+        <a href="#about" class="btn">ABOUT</a>
       </li>
       <li>
-        <a href="#project" class="btn">PROJECT</a>
+        <a href="#project" class="btn" @click="scrollToSection()">PROJECT</a>
       </li>
       <li>
         <a href="#contact" class="btn">CONTACT</a>
@@ -25,6 +25,7 @@
 export default {
   methods: {
     scrollToSection(sectionId) {
+      window.alert('Uh-oh, looks like the project page is on a coffee break ☕🛠️! Our developers are nudging it back to work. Meanwhile, feel free to check out the other cool stuff on my portfolio website!')
       this.$emit('scrollToSection', sectionId);
     }
   }
