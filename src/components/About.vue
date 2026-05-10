@@ -1,59 +1,74 @@
 <template>
-  <div class="relative">
-    <div class=" text-red-500 sm:flex text-base sm:text-xl m-auto monoton border-2 border-black bg-white w-fit p-2 sm:absolute sm:left-20 sm:top-12 z-20">ABOUT</div>
-    <div class="mx-8 mt-8 sm:mt-8 sm:mx-24 border sm:border-2 border-black bg-white h-fit justify-around block flex-col">
-      <div class="w-3/4 m-auto mt-16">
-        <div class="border-container m-auto w-fit bg-white">
-          <div class="square top-left"></div>
-          <div class="square top-right"></div>
-          <div class="square bottom-left"></div>
-          <div class="square bottom-right"></div>
-          <div class="m-8 text-sm sm:text-lg md:text-2xl xl:text-4xl tracking-[0.04rem] sm:tracking-[0.15rem] max-w-[520px] sm:max-w-[700px]">
-            <p>
-              Hello<span>,</span> Im Kevin F<span>.</span> Kidley
+  <div class="relative" ref="root">
+    <div
+      class="text-red-500 lg:flex text-base lg:text-xl m-auto monoton border-2 border-black bg-white w-fit p-2 lg:absolute lg:left-20 lg:top-12 z-20"
+    >
+      ABOUT
+    </div>
+
+    <div class="mx-8 mt-8 lg:mx-24 border lg:border-2 border-black bg-white">
+      <div class="pt-16 flex justify-center px-4 lg:px-0">
+        <div class="border-container bg-white">
+          <div class="square top-left" />
+          <div class="square top-right" />
+          <div class="square bottom-left" />
+          <div class="square bottom-right" />
+          <div
+            class="m-6 lg:m-8 text-sm md:text-lg lg:text-2xl xl:text-4xl tracking-[0.04rem] lg:tracking-[0.15rem]"
+          >
+            <p ref="line1" class="type-line whitespace-nowrap">
+              Hello<span>,</span> I'm Kevin F<span>.</span> Kidley
             </p>
-            <p>I am a Front<span>-</span>End Developer</p>
+            <p ref="line2" class="type-line whitespace-nowrap">
+              I am a Fullstack Developer
+            </p>
           </div>
         </div>
       </div>
-      <div class="mt-16 mb-16 block sm:flex justify-around">
-        <div class="text-xs md:text-lg lg:text-xl text-justify max-w-[16rem] md:max-w-sm lg:max-w-xl sm:leading-loose m-auto sm:m-0">
-          <div class="mb-8">
-            My journey began in psychology, providing me unique insights into user behavior and interaction. Today, I channel that understanding into crafting captivating web experiences that seamlessly fuse aesthetics, UI/UX design, and functionality. With JavaScript as programming languages, I'm dedicated to delivering user-centered digital solutions that leave a lasting impact. Leveraging frameworks such as Vue and React, and utilizing CSS/SCSS frameworks like Bootstrap and Tailwind, I strive to create online experiences that are not only visually appealing but also intuitive and responsive. Let's collaborate and turn your ideas into engaging online realities.
-          </div>
-          <div>
-            Think of me as a bit of a digital architect with a twist. My journey started in the world of psychology – delving into what makes people tick. Fast forward, and I've traded my magnifying glass for a keyboard, now weaving web experiences that blend sleek aesthetics, smooth interactions, and pragmatic smarts. Armed with coding magic and a dash of framework flair, I whip up responsive web goodness that adapts like a chameleon. Fancy turning your ideas into some seriously cool online reality? Let's team up and make it happen!
-          </div>
+      <div class="mt-12 mb-12 px-8 lg:px-16">
+        <div
+          class="text-xs sm:text-sm md:text-base lg:text-lg max-w-3xl lg:leading-loose mb-12 text-justify md:text-center mx-auto"
+        >
+          <p class="mb-6 reveal">
+            I am a Fullstack Developer specializing in building scalable,
+            high-performing web applications. I bridge the gap between complex
+            backend services and intuitive, user-centered interfaces — aligning
+            business goals with engineering excellence to deliver products that
+            are efficient, maintainable, and impactful.
+          </p>
+          <p class="reveal" style="--reveal-delay: 120ms">
+            My journey began in psychology, which gave me a unique lens on how
+            people interact with technology. That background shapes how I
+            approach every interface I build — not just as a technical artifact,
+            but as an experience. Whether it's a responsive UI or a backend
+            system, I care deeply about the human at the end of it. Let's team
+            up and turn your ideas into engaging online realities.
+          </p>
         </div>
-        <div class="max-w-32 text-center mb-16 mt-8 sm:mb-0 sm:text-justify">
-          <div>
-            <p class="text-lg md:text-2xl">Skill set</p>
-          </div>
-          <div class="mt-4 md:mt-8 block">
-            <div class="mb-4">
-              <span class="text-base md:text-xl">Programming Languages</span>
-              <p class="text-sm md:text-base">JavaScript</p>
-              <p class="text-sm md:text-base">TypeScript</p>
-            </div>
-            <div class="mb-4">
-              <span class="text-base md:text-xl">Framework</span>
-              <p class="text-sm md:text-base">Vue</p>
-              <p class="text-sm md:text-base">React</p>
-            </div>
-            <div class="mb-4">
-              <span class="text-base md:text-xl">Style Library</span>
-              <p class="text-sm md:text-base">Tailwind</p>
-              <p class="text-sm md:text-base">Bootstrap</p>
-              <p class="text-sm md:text-base">Ant Design</p>
-              <p class="text-sm md:text-base">Element</p>
-            </div>
-            <div class="mb-4">
-              <span class="text-base md:text-xl">Related Skills</span>
-              <p class="text-sm md:text-base">User Experience &#40;UX&#41; Design</p>
-              <p class="text-sm md:text-base">User Interface &#40;UI&#41; Design</p>
-              <p class="text-sm md:text-base">User-Centered Design</p>
-              <p class="text-sm md:text-base">Responsive Design Principles</p>
-              <p class="text-sm md:text-base">Cross-Browser Compatibility</p>
+        <div>
+          <p
+            class="text-lg md:text-2xl mb-8 reveal"
+            style="--reveal-delay: 200ms"
+          >
+            Skill set
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-12">
+            <div
+              v-for="(group, i) in skills"
+              :key="group.label"
+              class="reveal"
+              :style="`--reveal-delay: ${280 + i * 60}ms`"
+            >
+              <span class="text-xs sm:text-sm md:text-base lg:text-lg">{{
+                group.label
+              }}</span>
+              <p
+                v-for="item in group.items"
+                :key="item"
+                class="text-xs sm:text-sm md:text-base mt-1 opacity-60"
+              >
+                {{ item }}
+              </p>
             </div>
           </div>
         </div>
@@ -63,13 +78,72 @@
 </template>
 
 <script>
-  export default {
-    
-  }
+const SKILLS = [
+  { label: "Languages", items: ["JavaScript", "TypeScript", "Python"] },
+  { label: "Frontend", items: ["React", "Vue.js", "Next.js", "Nuxt.js"] },
+  { label: "Backend", items: ["Node.js", "Nest.js", "Express.js", "FastAPI"] },
+  { label: "Databases", items: ["PostgreSQL", "MongoDB", "MySQL"] },
+  {
+    label: "DevOps & Tools",
+    items: ["Docker", "AWS", "GCP", "CI/CD", "Jest", "Grafana K6"],
+  },
+  { label: "Design", items: ["Figma", "UI/UX Design", "System Architecture"] },
+  { label: "Essentials", items: ["AI Automation", "AI Agents"] },
+];
+
+const CHAR_MS = 45;
+
+export default {
+  data() {
+    return { skills: SKILLS };
+  },
+
+  mounted() {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          this.startAnimations();
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.15 },
+    );
+    observer.observe(this.$refs.root);
+  },
+
+  methods: {
+    startAnimations() {
+      const { line1, line2 } = this.$refs;
+      const dur1 = line1.textContent.trim().length * CHAR_MS;
+      const dur2 = line2.textContent.trim().length * CHAR_MS;
+
+      // Line 1 types, then line 2 picks up the cursor
+      line1.style.animationDuration = `${dur1}ms, 0.6s`;
+      line1.classList.add("typing");
+
+      setTimeout(() => {
+        line1.classList.remove("typing");
+        line1.classList.add("typed");
+
+        line2.style.animationDuration = `${dur2}ms, 0.6s`;
+        line2.classList.add("typing");
+
+        setTimeout(() => {
+          line2.classList.remove("typing");
+          line2.classList.add("typed-final");
+        }, dur2);
+      }, dur1);
+      setTimeout(() => {
+        this.$el
+          .querySelectorAll(".reveal")
+          .forEach((el) => el.classList.add("revealed"));
+      }, 600);
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-
 .border-container {
   position: relative;
   border: 1px solid #000;
@@ -79,24 +153,21 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: #000000;
+  background-color: #000;
 }
 
 .top-left {
   top: -4px;
   left: -4px;
 }
-
 .top-right {
   top: -4px;
   right: -4px;
 }
-
 .bottom-left {
   bottom: -4px;
   left: -4px;
 }
-
 .bottom-right {
   bottom: -4px;
   right: -4px;
@@ -106,4 +177,56 @@ span {
   color: rgb(239 68 68);
 }
 
+@keyframes typewriter {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0% 0 0);
+  }
+}
+
+@keyframes blink-cursor {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+.type-line {
+  overflow: hidden;
+  clip-path: inset(0 100% 0 0);
+  border-right: 2px solid transparent;
+}
+
+.typing {
+  animation:
+    typewriter 1s linear forwards,
+    blink-cursor 0.6s step-end infinite;
+  border-right-color: #ef4444;
+}
+
+.typed {
+  clip-path: inset(0 0% 0 0);
+  border-right-color: transparent;
+}
+
+.typed-final {
+  clip-path: inset(0 0% 0 0);
+  border-right-color: #ef4444;
+  animation: blink-cursor 0.6s step-end infinite;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
 </style>

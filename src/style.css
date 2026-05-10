@@ -1,17 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
-@import url("https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Monoton&family=Roboto&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* 
-  FONT OPTION
-
-  font-family: 'Monomaniac One', sans-serif;
-  font-family: 'Monoton', cursive;
-  font-family: 'Roboto', sans-serif;
-*/
 
 html,
 body {

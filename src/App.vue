@@ -1,11 +1,17 @@
 <template>
   <div class="sm:min-h-screen block">
-    <Navbar @scrollToSection="scrollToSection" />
-    <div class="mt-16 mb-4 sm:mt-[4.5rem] sm:mb-10">
+    <Navbar />
+    <div class="mt-16 mb-4 lg:mt-[4.5rem] lg:mb-10">
       <Home />
     </div>
-    <div class="my-4 sm:my-10">
+    <div class="my-4 lg:my-10">
       <About id="about" />
+    </div>
+    <div class="my-4 lg:my-10">
+      <Experience id="experience" />
+    </div>
+    <div class="my-4 lg:my-10">
+      <Projects id="project" />
     </div>
     <footer>
       <Contact id="contact" />
@@ -17,6 +23,8 @@
 import Navbar from "./components/navbar.vue";
 import Home from "./components/Home.vue";
 import About from "./components/About.vue";
+import Experience from "./components/Experience.vue";
+import Projects from "./components/Projects.vue";
 import Contact from "./components/Contact.vue";
 
 export default {
@@ -24,19 +32,12 @@ export default {
     Navbar,
     Home,
     About,
+    Experience,
+    Projects,
     Contact,
-  },
-  methods: {
-    scrollToSection(sectionId) {
-      const sectionElement = document.getElementById(sectionId);
-      if (sectionElement) {
-        sectionElement.scrollIntoView({ behavior: 'smooth' });
-      }
-    },
   },
 };
 </script>
-
 
 <style>
 body {

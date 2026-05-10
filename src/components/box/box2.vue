@@ -1,14 +1,12 @@
 <template>
-  <div class="w-full sm:w-3/4">
-    <div class="border-container float-left text-left w-full sm:w-fit bg-white">
+  <div class="w-full lg:w-3/4">
+    <div class="border-container lg:float-left text-center lg:text-left w-full lg:w-fit bg-white">
       <div class="square top-left"></div>
       <div class="square top-right"></div>
       <div class="square bottom-left"></div>
       <div class="square bottom-right"></div>
-      <div class="m-8 text-base sm:text-lg md:text-2xl xl:text-4xl tracking-[0.04rem] sm:tracking-[0.1rem] max-w-[520px] sm:max-w-[720px]">
-        <p>
-          Transforming Designs into Seamless Interactive Realities<span class=" text-red-500">.</span>
-        </p>
+      <div class="m-8 text-base md:text-lg lg:text-2xl xl:text-4xl tracking-[0.04rem] lg:tracking-[0.1rem] max-w-[520px] lg:max-w-[720px]">
+        <p>I own every layer <span class="text-red-500">—</span> from schema to server to screen<span class="text-red-500">.</span></p>
       </div>
     </div>
   </div>
